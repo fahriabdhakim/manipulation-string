@@ -1,7 +1,7 @@
 // LEVEL 0
 
-const sentenceA = "Hello World"
-const sentenceB = "Good Bye!"
+var sentenceA = "Hello World"
+var sentenceB = "Good Bye!"
 
 console.log(sentenceA)
 console.log(sentenceB)
@@ -21,15 +21,18 @@ console.log(sentenceD)
 // LEVEL 2
 
 sentenceA = sentenceA.toUpperCase()
-sentenceB = sentenceB.toUppercase()
+sentenceB = sentenceB.toUpperCase()
+
+console.log(sentenceA)
+console.log(sentenceB)
 
 
 
 // LEVEL 3
 
 function titleCase(str) {
-  str = str.tolowerCase().split(' ')
-  for (var i = 0 i < str.length; i++) {
+  str = str.toLowerCase().split(' ')
+  for (var i = 0; i < str.length; i++) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)
   }
   return str.join(' ')
